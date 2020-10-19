@@ -1,42 +1,40 @@
 package meowfeeder.app.meow_feeder;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
-    private ImageView button;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+
+public class MainActivity extends Fragment {
+
+    ImageView b1;
+
+    public MainActivity() {
+
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public View onCreateView(LayoutInflater inflater, ViewGroup containr, Bundle saveInstancestate) {
+        View view = inflater.inflate(R.layout.activity_main, containr, false);
 
-        button = (ImageView) findViewById(R.id.plus);
-        button.setOnClickListener(new View.OnClickListener() {
+        b1 = view.findViewById(R.id.add);
+
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openconnect();
+
+                Fragment fragment = new connect();
+                FragmentTransaction fmt = getFragmentManager().beginTransaction();
+                fmt.replace(R.id.main_fragment, fragment);
+                fmt.commit();
             }
         });
-        button = (ImageView) findViewById(R.id.timer);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opentimer();
-            }
-        });
-    }
-    public void openconnect() {
-        Intent intent = new Intent(this, connect.class);
-        startActivity(intent);
-    }
-    public void opentimer() {
-        Intent intent = new Intent(this, timer.class);
-        startActivity(intent);
+        return view;
     }
 }

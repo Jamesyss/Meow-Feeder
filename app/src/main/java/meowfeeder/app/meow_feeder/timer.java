@@ -1,41 +1,24 @@
 package meowfeeder.app.meow_feeder;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
+import android.view.ViewGroup;
 
-public class timer extends AppCompatActivity {
-    private ImageView button;
+public class timer extends Fragment {
+
+    public timer(){
+
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_timer);
+    public View onCreateView(LayoutInflater inflater, ViewGroup containr,Bundle saveInstancestate){
+        View view = inflater.inflate(R.layout.activity_timer,containr,false);
 
-        button = (ImageView) findViewById(R.id.home);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openhome();
-            }
-        });
-        button = (ImageView) findViewById(R.id.timer);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opentimer();
-            }
-        });
-    }
-    public void openhome() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-    public void opentimer() {
-        Intent intent = new Intent(this, timer.class);
-        startActivity(intent);
+
+
+        return view;
     }
 }

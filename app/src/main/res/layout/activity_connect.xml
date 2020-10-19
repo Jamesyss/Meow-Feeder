@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/connectback"
-    tools:context=".MainActivity">
+    tools:context=".connect">
 
     <ImageView
         android:id="@+id/bell"
