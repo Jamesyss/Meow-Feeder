@@ -39,6 +39,7 @@ public class Home extends Fragment {
         slideModels.add(new SlideModel("https://i.pinimg.com/originals/41/f5/58/41f558af99ca90b1d65f4fe25087776d.jpg"));
         slideModels.add(new SlideModel("https://lovemeaw.com/wp-content/uploads/2019/09/american-shorthair-cat-768x432.jpeg"));
         slideModels.add(new SlideModel("https://petsgyan.com/wp-content/uploads/2020/05/Siamese-cat-3-660x330.jpg"));
+        slideModels.add(new SlideModel("https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"));
         imageSlider.setImageList(slideModels, true);
 
         b1.setOnClickListener(new View.OnClickListener() {
