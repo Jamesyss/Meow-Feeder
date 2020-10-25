@@ -38,5 +38,13 @@ public class Bottom_Navigation extends AppCompatActivity {
         fmt.replace(R.id.main_fragment,fragment);
         fmt.commit();
     }
+    public void btn_notification(View view){
+        Fragment fragment;
+        fragment = new notification();
+        FragmentManager fmg = getSupportFragmentManager();
+        FragmentTransaction fmt = fmg.beginTransaction();
+        fmt.replace(R.id.main_fragment,fragment);
+        fmt.commit();
+    }
 
 }

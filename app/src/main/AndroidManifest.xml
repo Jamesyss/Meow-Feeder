@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="meowfeeder.app.meow_feeder">
 
-    <uses-permission android:name="android.permission.INTERNET"
-    ></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Bottom_Navigation"></activity>
+        <activity android:name=".notification"></activity>
+        <activity android:name=".Bottom_Navigation" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

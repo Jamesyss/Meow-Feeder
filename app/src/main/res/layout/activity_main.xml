@@ -21,7 +21,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:period="1000"
-        app:placeholder="@drawable/imgback"></com.denzcoskun.imageslider.ImageSlider>
+        app:placeholder="@drawable/imgback">
+
+    </com.denzcoskun.imageslider.ImageSlider>
 
     <ImageView
         android:id="@+id/add"
