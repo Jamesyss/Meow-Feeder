@@ -16,13 +16,14 @@
         android:ems="10"
         android:inputType="number"
         android:textColor="#A65424"
-        android:textSize="32dp"
+        android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:fontFamily="@font/fc_lamoon_bold"/>
 
     <TextView
         android:id="@+id/textView1"
@@ -31,13 +32,14 @@
         android:layout_marginTop="8dp"
         android:text="Select Time"
         android:textColor="#A65424"
-        android:textSize="50dp"
+        android:textSize="130px"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29000002" />
+        app:layout_constraintVertical_bias="0.29000002"
+        android:fontFamily="@font/fc_lamoon_bold"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -45,14 +47,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Select Time"
-        android:textSize="50dp"
+        android:textSize="130px"
         android:textColor="#A65424"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:fontFamily="@font/fc_lamoon_bold"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -61,12 +64,13 @@
         android:layout_marginTop="32dp"
         android:text="Select Time"
         android:textColor="#A65424"
-        android:textSize="50dp"
+        android:textSize="130px"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:fontFamily="@font/fc_lamoon_bold"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
