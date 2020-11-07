@@ -32,7 +32,7 @@ public class Timer extends Fragment  {
         textView1 = view.findViewById(R.id.textView1);
         textView2 = view.findViewById(R.id.textView2);
         textView3 = view.findViewById(R.id.textView3);
-        //textView4 = view.findViewById(R.id.textView4);
+        textView4 = view.findViewById(R.id.textView4);
 
         textView1.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -105,7 +105,29 @@ public class Timer extends Fragment  {
                 timePickerDialog.show();
             }
         });
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimePickerDialog timePickerDialog = new TimePickerDialog(
+                        getActivity(),
+                        new TimePickerDialog.OnTimeSetListener() {
+                            @Override
+                            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 
+                                t4hour = hourOfDay;
+                                t4Minute = minute;
+
+                                Calendar calendar = Calendar.getInstance();
+                                calendar.set(0, 0, 0, t4hour, t4Minute);
+                                textView4.setText(DateFormat.format("hh:mm aa", calendar));
+                            }
+                        }, 12, 0, false
+                );
+
+                timePickerDialog.updateTime(t4hour,t4Minute);
+                timePickerDialog.show();
+            }
+        });
         return view;
     }
 
