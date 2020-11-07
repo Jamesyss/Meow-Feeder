@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "459214853906",
+    "firebase_url": "https://meow-feeder.firebaseio.com",
+    "project_id": "meow-feeder",
+    "storage_bucket": "meow-feeder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459214853906:android:7b339dab9128a143ca05cb",
+        "android_client_info": {
+          "package_name": "meowfeeder.app.meow_feeder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459214853906-0osdbou6skek5k77aatquhgrjrmn179r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "meowfeeder.app.meow_feeder",
+            "certificate_hash": "dda06da1642b108911b814ce694da4dc96e3001c"
+          }
+        },
+        {
+          "client_id": "459214853906-o5fkqa6nngmpk07lkp5jgdut0bnpoldl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH4zmCrHWq6L9kWcFIdksIhuUgZzVuPxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459214853906-o5fkqa6nngmpk07lkp5jgdut0bnpoldl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

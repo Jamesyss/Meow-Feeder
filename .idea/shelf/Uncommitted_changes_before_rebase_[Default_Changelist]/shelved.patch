@@ -1,0 +1,112 @@
+Index: app/src/main/res/layout/activity_timer.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/timerback\"\r\n    tools:context=\".Timer\">\r\n\r\n    <EditText\r\n        android:id=\"@+id/editTextNumber\"\r\n        android:layout_width=\"90dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginTop=\"105dp\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:ems=\"10\"\r\n        android:inputType=\"number\"\r\n        android:textColor=\"#A65424\"\r\n        android:textSize=\"32dp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.0\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView1\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:text=\"Select Time\"\r\n        android:textColor=\"#A65424\"\r\n        android:textSize=\"50dp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.29000002\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView2\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginTop=\"32dp\"\r\n        android:text=\"Select Time\"\r\n        android:textSize=\"50dp\"\r\n        android:textColor=\"#A65424\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView1\"\r\n        app:layout_constraintVertical_bias=\"0.0\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView3\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginTop=\"32dp\"\r\n        android:text=\"Select Time\"\r\n        android:textColor=\"#A65424\"\r\n        android:textSize=\"50dp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textView2\"\r\n        app:layout_constraintVertical_bias=\"0.0\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_timer.xml	(revision 307446d18b0d202e7a3d553b3fc43ae54cfc3d47)
++++ app/src/main/res/layout/activity_timer.xml	(date 1604287849913)
+@@ -16,13 +16,14 @@
+         android:ems="10"
+         android:inputType="number"
+         android:textColor="#A65424"
+-        android:textSize="32dp"
++        android:textSize="35dp"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.0" />
++        app:layout_constraintVertical_bias="0.0"
++        android:fontFamily="@font/fc_lamoon_bold"/>
+ 
+     <TextView
+         android:id="@+id/textView1"
+@@ -31,13 +32,14 @@
+         android:layout_marginTop="8dp"
+         android:text="Select Time"
+         android:textColor="#A65424"
+-        android:textSize="50dp"
++        android:textSize="130px"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.29000002" />
++        app:layout_constraintVertical_bias="0.29000002"
++        android:fontFamily="@font/fc_lamoon_bold"/>
+ 
+     <TextView
+         android:id="@+id/textView2"
+@@ -45,14 +47,15 @@
+         android:layout_height="wrap_content"
+         android:layout_marginTop="32dp"
+         android:text="Select Time"
+-        android:textSize="50dp"
++        android:textSize="130px"
+         android:textColor="#A65424"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/textView1"
+-        app:layout_constraintVertical_bias="0.0" />
++        app:layout_constraintVertical_bias="0.0"
++        android:fontFamily="@font/fc_lamoon_bold"/>
+ 
+     <TextView
+         android:id="@+id/textView3"
+@@ -61,12 +64,13 @@
+         android:layout_marginTop="32dp"
+         android:text="Select Time"
+         android:textColor="#A65424"
+-        android:textSize="50dp"
++        android:textSize="130px"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/textView2"
+-        app:layout_constraintVertical_bias="0.0" />
++        app:layout_constraintVertical_bias="0.0"
++        android:fontFamily="@font/fc_lamoon_bold"/>
+ 
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/font/fclamoon_bold.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/font/fclamoon_bold.xml	(date 1599821726498)
++++ app/src/main/res/font/fclamoon_bold.xml	(date 1599821726498)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="utf-8"?>
++<font-family xmlns:android="http://schemas.android.com/apk/res/android">
++    <font
++        android:fontStyle="normal"
++        android:fontWeight="400"
++        android:font="@font/fc_lamoon_bold"
++        />
++</font-family>
+\ No newline at end of file
+Index: app/src/main/res/font/fclamoon.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/font/fclamoon.xml	(date 1599821726497)
++++ app/src/main/res/font/fclamoon.xml	(date 1599821726497)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="utf-8"?>
++<font-family xmlns:android="http://schemas.android.com/apk/res/android">
++    <font
++        android:fontStyle="normal"
++        android:fontWeight="400"
++        android:font="@font/fc_lamoon_regular"
++        />
++</font-family>
+\ No newline at end of file
