@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -34,6 +37,9 @@ public class Bottom_Navigation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom__navigation);
+
+        /*this = Timer.instantiate();
+        SharedPreferences preferences = this.getActivity().getSharedPreferences("pref", Context.MODE_PRIVATE);*/
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference_LED = firebaseDatabase.getReference("cat-auto-feeder/LED_STATUS");
