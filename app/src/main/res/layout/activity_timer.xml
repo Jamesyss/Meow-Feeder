@@ -7,24 +7,6 @@
     android:background="@drawable/timerback"
     tools:context=".Timer">
 
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="85dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="46dp"
-        android:ems="10"
-        android:fontFamily="@font/fc_lamoon_bold"
-        android:inputType="number"
-        android:textColor="#A65424"
-        android:textSize="45dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
