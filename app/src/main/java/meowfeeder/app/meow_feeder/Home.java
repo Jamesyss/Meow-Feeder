@@ -42,17 +42,6 @@ public class Home extends Fragment {
         slideModels.add(new SlideModel("https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"));
         imageSlider.setImageList(slideModels, true);
 
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Fragment fragment = new connect();
-                FragmentTransaction fmt = getFragmentManager().beginTransaction();
-                fmt.replace(R.id.main_fragment, fragment);
-                fmt.commit();
-            }
-
-        });
         return view;
     }
 
