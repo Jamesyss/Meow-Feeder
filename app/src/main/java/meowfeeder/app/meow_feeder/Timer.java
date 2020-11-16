@@ -25,7 +25,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Calendar;
 
-public class Timer extends Fragment  {
+public class
+Timer extends Fragment  {
 
     public FirebaseDatabase firebaseDatabase;
     public DatabaseReference databaseReference_Timer1,databaseReference_Timer2,databaseReference_Timer3,databaseReference_Timer4;
@@ -146,9 +147,9 @@ public class Timer extends Fragment  {
 
                                 Calendar calendar = Calendar.getInstance();
                                 calendar.set(0, 0, 0, t1hour, t1Minute);
-                                textView1.setText(DateFormat.format("hh:mm aa", calendar));
+                                textView1.setText(DateFormat.format("HH:mm", calendar));
                             }
-                        }, 12, 0, false
+                        }, 24, 0, true
 
                 );
                 timePickerDialog.updateTime(t1hour,t1Minute);
@@ -190,9 +191,9 @@ public class Timer extends Fragment  {
 
                                 Calendar calendar = Calendar.getInstance();
                                 calendar.set(0, 0, 0, t2hour, t2Minute);
-                                textView2.setText(DateFormat.format("hh:mm aa", calendar));
+                                textView2.setText(DateFormat.format("HH:mm", calendar));
                             }
-                        }, 12, 0, false
+                        }, 24, 0, true
                 );
 
                 timePickerDialog.updateTime(t2hour,t2Minute);
@@ -227,9 +228,9 @@ public class Timer extends Fragment  {
 
                                 Calendar calendar = Calendar.getInstance();
                                 calendar.set(0, 0, 0, t3hour, t3Minute);
-                                textView3.setText(DateFormat.format("hh:mm aa", calendar));
+                                textView3.setText(DateFormat.format("HH:mm", calendar));
                             }
-                        }, 12, 0, false
+                        }, 24, 0, true
                 );
 
                 timePickerDialog.updateTime(t3hour,t3Minute);
@@ -264,9 +265,9 @@ public class Timer extends Fragment  {
 
                                 Calendar calendar = Calendar.getInstance();
                                 calendar.set(0, 0, 0, t4hour, t4Minute);
-                                textView4.setText(DateFormat.format("hh:mm aa", calendar));
+                                textView4.setText(DateFormat.format("HH:mm", calendar));
                             }
-                        }, 12, 0, false
+                        }, 24, 0, true
                 );
 
                 timePickerDialog.updateTime(t4hour,t4Minute);
