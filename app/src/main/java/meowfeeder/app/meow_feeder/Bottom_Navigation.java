@@ -83,27 +83,21 @@ public class Bottom_Navigation extends AppCompatActivity {
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(notificationChannel);
         }
+        Intent resultIntent = new Intent(this,Notification.class);
+        resultIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        PendingIntent resultPendingIntent = PendingIntent.getActivity(this,
+                1, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"n")
                 .setContentText("Code sphere")
                 .setSmallIcon(R.drawable.appicon)
                 .setAutoCancel(true)
-                .setContentText(message);
+                .setContentText(message)
+                .setContentIntent(resultPendingIntent);
 
-        /*NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);
-        managerCompat.notify(999,builder.build());*/
-
-        Intent intent = new Intent(Bottom_Navigation.this, Notification.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.putExtra("message",message);
-
-        PendingIntent pendingIntent = PendingIntent.getActivity(Bottom_Navigation.this,
-                0,intent, PendingIntent.FLAG_UPDATE_CURRENT);
-        builder.setContentIntent(pendingIntent);
-
-        NotificationManager notificationManager =(NotificationManager) getSystemService(
-                Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(0,builder.build());
+        resultIntent.putExtra("message",message);
+        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);
+        managerCompat.notify(999,builder.build());
 
     }
 
@@ -123,13 +117,8 @@ public class Bottom_Navigation extends AppCompatActivity {
         fmt.replace(R.id.main_fragment,fragment);
         fmt.commit();
     }
-    public void  btn_notification(View view){
-        Fragment fragment;
-        fragment = new Notification();
-        FragmentManager fmg = getSupportFragmentManager();
-        FragmentTransaction fmt = fmg.beginTransaction();
-        fmt.replace(R.id.main_fragment,fragment);
-        fmt.commit();
+    public void btn_notify(View view){
+        Intent intent = new Intent(this,Notification.class);
+        startActivity(intent);
     }
-
 }

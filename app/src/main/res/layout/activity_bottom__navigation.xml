@@ -80,7 +80,7 @@
 
     <ImageView
         android:id="@+id/btn_notification"
-        android:onClick="btn_notification"
+        android:onClick="btn_notify"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
