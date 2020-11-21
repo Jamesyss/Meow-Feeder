@@ -51,10 +51,6 @@ Timer extends Fragment  {
         sw3 = view.findViewById(R.id.swCustom3);
         sw4 = view.findViewById(R.id.swCustom4);
 
-        //sw2.setChecked(sharedPreferences.getBoolean("Value",true));
-        //sw3.setChecked(sharedPreferences.getBoolean("Value",true));
-        //sw4.setChecked(sharedPreferences.getBoolean("Value",true));
-
         firebaseDatabase = FirebaseDatabase.getInstance();
 
         databaseReference_Timer1 = firebaseDatabase.getReference("Timer/Timer_1");
@@ -162,14 +158,8 @@ Timer extends Fragment  {
                 if (sw1.isChecked()){
                     String timer1 = textView1.getText().toString();
                     FirebaseDatabase.getInstance().getReference().child("Timer").child("Timer_1").setValue(timer1);
-                    //SharedPreferences sharedPreferences = getActivity().getSharedPreferences("save", Context.MODE_PRIVATE);
-                    //sw1.setChecked(sharedPreferences.getBoolean("Value",true));
                 }else{
                     FirebaseDatabase.getInstance().getReference().child("Timer").child("Timer_1").setValue("Disable");
-                    //SharedPreferences.Editor editor = getActivity().getSharedPreferences("save", Context.MODE_PRIVATE).edit();
-                    //editor.putBoolean("value",false);
-                   // editor.apply();
-                   //sw1.setChecked(false);
 
                 }
             }
